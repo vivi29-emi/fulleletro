@@ -1,0 +1,75 @@
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    
+}
+   
+
+.menu{
+  
+    background: rgb(34,6,245);
+    background: linear-gradient(90deg, rgba(34,6,245,0.9332107843137255) 59%, rgba(189,228,2,1) 87%);
+    
+    
+}
+.menu a{
+    color: #ffff;
+    padding:5%;
+    text-decoration: none;
+}
+
+
+
+.produtos {
+    color:black;
+    width:20%;
+}
+.descricao{
+    font-size: 90%;
+}
+
+.precos{
+    color: red;
+}
+#rodape{
+    text-align: center;
+    
+}
+.rodape_final{
+    font-size: 80%;
+}
+
+.box_produtos{
+    display: inline-block;
+    width: 33%;
+    height:20% ;
+}
+
+#formadepagamento {
+    color: red;
+}
+ .box_lojas{
+     display: inline-block;
+     width: 33%;
+     height: 30%;
+ }
+
+#contato{
+    border: 0;
+    width: 100%;
+    
+}    
+.box_contato{
+    width: 50%;
+    text-align: center;
+    font-size: 4;
+    
+
+}
+
+
+
+     
+
+ 
