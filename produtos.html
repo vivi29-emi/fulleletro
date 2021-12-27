@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
   <title>Fulleletro</title>
 
 <body>
@@ -28,182 +29,248 @@
 
         <h3> Categoria</h3>
         <ul>
-          <li>Notebook (10)</li>
-          <li>SSD (5)</li>
-          <li>Processador (6) </li>
-          <li>Suporte para Notebook (20)</li>
-          <li>Extensão Elétrica (30)</li>
+          <li onclick="exibir_todos()">Tdoas as categorias (27)</li>
+          <li onclick="exibir_categoria('notebook')">Notebook (6)</li>
+          <li onclick="exibir_categoria('ssd')">SSD (5)</li>
+          <li onclick="exibir_categoria('processador')">Processador (4) </li>
+          <li onclick="exibir_categoria('suporte para notebook')">Suporte para Notebook (5)</li>
+          <li onclick="exibir_categoria('extensao eletrica')">Extensão Elétrica (7)</li>
         </ul>
       </section>
 
         <section  id="produtos">
 
-        <div class="box_produtos"> 
-        <img src="./imagen/produto.jpg" alt="Notebook" width="160px">
+        <div class="box_produtos" id="notebook" style="display: block;"> 
+        <img src="./imagen/produto.jpg" alt="Notebook" width="120px"onclick="destaque(this)">
         <br>
-        <p class="descricao"> Notebook Positivo, I3, 1T</p>
+        <div class="descricao"> Notebook Positivo, I3, 1T </div>
         <hr>
-        <p class="descricao"><strike> $ 3.400,99</strike></p> 
-        <p class="precos"> <b>$ 2.699,99</b></p>
+        <div class="descricao" ><strike> $ 3.400,99</strike></div> 
+        <div class="precos"> <b>$ 2.699,99</b></div>
+      </div>
+      <div class="box_produtos" id="notebook" style="display:block;"> 
+        <img src="./imagen/produto.jpg" alt="Notebook" width="120px"onclick="destaque(this)">
+        <onclick="destaque(this)">
+        <div class="descricao"> Notebook Positivo, I3, 1T</div>
+        <hr>
+        <div class="descricao"><strike> $ 3.400,99</strike></div> 
+        <div class="precos"> <b>$ 2.699,99</b></div>
+      </div>
+      <div class="box_produtos" id="notebook" style="display:block;"> 
+        <img src="./imagen/produto.jpg" alt="Notebook" width="120px"onclick="destaque(this)">
+        <onclick="destaque(this)">
+        <div class="descricao"> Notebook Positivo, I3, 1T</div>
+        <hr>
+        <div class="descricao"><strike> $ 3.400,99</strike></div> 
+        <div class="precos"> <b>$ 2.699,99</b></div>
       </div>
 
-      <div class="box_produtos"> 
-        <img src="./imagen/pr suporte.jpg" alt="suporte para notebook" width="150px">
+      <div class="box_produtos"id="suporte_para_notebook" style="display: block;"> 
+        <img src="./imagen/pr suporte.jpg" alt="suporte para notebook"width="120px"onclick="destaque(this)">
         <br>
-        <p class="descricao"> Suporte p/ Notebook/  base inox</p>
+        <div class="descricao"> Suporte p/ Notebook/  base inox</div>
         <hr>
-        <p class="descricao"><strike> $ 1.900,00</strike></p> 
-        <p class="precos"> <b>$ 1.200,99 </b></p>
+        <div class="descricao"><strike> $ 1.900,00</strike></div> 
+        <div class="precos"> <b>$ 1.200,99 </b></div>
       </div>
-      <div class="box_produtos"> 
-        <img src="./imagen/pr ssd.jpg" alt="ssd" width="150px">
+      <div class="box_produtos"id="ssd" style="display: block;"> 
+        <img src="./imagen/pr ssd.jpg" alt="ssd" width="120px"onclick="destaque(this)">
         <br>
-        <p class="descricao"> SSD SanDisck</p>
+        <div class="descricao"> SSD SanDisck</div>
         <hr>
-        <p class="descricao"> <strike> $ 900,00</strike></p> 
-        <p class="precos"> <b>$ 800,99 </b></p>
+        <div class="descricao" style="display: block;"> <strike> $ 900,00</strike></div> 
+        <div class="precos"> <b>$ 800,99 </b></div>
       </div>
-      <div class="box_produtos"> 
-        <img src="./imagen/pr proces.jpg" alt="processador" width="150px">
-        <br>
-        <p class="descricao"> Processador Intel I5 </p>
+
+      <div class="box_produtos"id="ssd" style="display: block;"> 
+        <img src="./imagen/pr ssd.jpg" alt="ssd" width="120px" onclick="destaque(this)">
+      <div class="descricao"> SSD SanDisck</div>
         <hr>
-        <p class="descricao"> <strike> $ 1.300,00</strike></p> 
-        <p class="precos"> <b>$ 1.200,99 </b></p>
+        <div class="descricao" style="display: block;"> <strike> $ 900,00</strike></div> 
+        <div class="precos"> <b>$ 800,99 </b></div>
       </div>
-      <div class="box_produtos"> 
-        <img src="./imagen/pr extensao.jpg" alt="extensao" width="150px">
+      <div class="box_produtos"id="processador" style="display: block;"> 
+        <img src="./imagen/pr proces.jpg" alt="processador" width="120px"onclick="destaque(this)">
         <br>
-        <p class="descricao">  Extensão 6 ent/30 m/Branco</p>
+        <div class="descricao" style="display: block;"> Processador Intel I5 </div>
         <hr>
-        <p class="descricao"> <strike>  $ 150,00</strike></p> 
-        <p class="precos"> <b>$ 149,99 </b></p>
+        <div class="descricao"> <strike> $ 1.300,00</strike></div> 
+        <div class="precos"> <b>$ 1.200,99 </b></div>
+      </div>
+      <div class="box_produtos"id="extensao" style="display: block;"> 
+        <img src="./imagen/pr extensao.jpg" alt="extensao" width="120px" onclick="destaque(this)">
+        <br>
+        <div class="descricao">  Extensão 6 ent/30 m/Branco</div>
+        <hr>
+        <div class="descricao"> <strike>  $ 150,00</strike></div> 
+        <div class="precos"> <b>$ 149,99 </b></div>
       </div>
       
-      <div class="box_produtos"> 
-        <img src="./imagen/produto.jpg" alt="Notebook" width="160px">
-        <br>
-        <p class="descricao"> Notebook Positivo, I3, 1T</p>
+      <div class="box_produtos"id="notebook" style="display: block;"> 
+        <img src="./imagen/produto.jpg" alt="Notebook" width="120px"onclick="destaque(this)">
+        <onclick="destaque(this)">
+        <div class="descricao"> Notebook Positivo, I3, 1T</div>
         <hr>
-        <p class="descricao"><strike> $ 3.400,99</strike></p> 
-        <p class="precos"> <b>$ 2.699,99</b></p>
+        <div class="descricao"><strike> $ 3.400,99</strike></div> 
+        <div class="precos"> <b>$ 2.699,99</b></div>
       </div>
 
-      <div class="box_produtos"> 
-        <img src="./imagen/pr suporte.jpg" alt="suporte para notebook" width="150px">
+      <div class="box_produtos"id="suporte_para_notebook" style="display: block;"> 
+        <img src="./imagen/pr suporte.jpg" alt="suporte para notebook"width="120px" onclick="destaque(this)">
         <br>
-        <p class="descricao"> Suporte p/ Notebook/ base inox</p>
+        <div class="descricao"> Suporte p/ Notebook/ base inox</div>
         <hr>
-        <p class="descricao"><strike> $ 1.900,00</strike></p> 
-        <p class="precos"> <b>$ 1.200,99 </b></p>
+        <div class="descricao"><strike> $ 1.900,00</strike></div> 
+        <div class="precos"> <b>$ 1.200,99 </b></div>
       </div>
-      <div class="box_produtos"> 
-        <img src="./imagen/pr ssd.jpg" alt="ssd" width="150px">
+      <div class="box_produtos"id="ssd" style="display: block;"> 
+        <img src="./imagen/pr ssd.jpg" alt="ssd" width="120px" onclick="destaque(this)">
         <br>
-        <p class="descricao"> SSD SanDisck</p>
+        <div class="descricao"> SSD SanDisck</div>
         <hr>
-        <p class="descricao"> <strike> $ 900,00</strike></p> 
+        <div class="descricao"> <strike> $ 900,00</strike></div> 
         <p class="precos"> <b>$ 800,99 </b></p>
       </div>
-      <div class="box_produtos"> 
-        <img src="./imagen/pr proces.jpg" alt="processador" width="150px">
+      <div class="box_produtos" style="display: block;"> 
+        <img src="./imagen/pr proces.jpg" alt="processador" width="120px" onclick="destaque(this)">
         <br>
-        <p class="descricao"> Processador Intel I5 </p>
+        <div class="descricao"id="processador" style="display: block;"> Processador Intel I5 </div>
         <hr>
-        <p class="descricao"> <strike> $ 1.300,00</strike></p> 
-        <p class="precos"> <b>$ 1.200,99 </b></p>
+        <div class="descricao"> <strike> $ 1.300,00</strike></div> 
+        <div class="precos"> <b>$ 1.200,99 </b></div>
       </div>
-      <div class="box_produtos"> 
-        <img src="./imagen/pr extensao.jpg" alt="extensao" width="150px">
+      <div class="box_produtos"id="extensao" style="display: block;"> 
+        <img src="./imagen/pr extensao.jpg" alt="extensao" width="120px" onclick="destaque(this)">
         <br>
-        <p class="descricao">  Extensão 6 ent/30 m/Branco</p>
+        <div class="descricao">  Extensão 6 ent/30 m/Branco</div>
         <hr>
-        <p class="descricao"> <strike>  $ 150,00</strike></p> 
-        <p class="precos"> <b>$ 149,99 </b></p>
+        <div class="descricao"> <strike>  $ 150,00</strike></div> 
+        <div class="precos"> <b>$ 149,99 </b></div>
       </div>
       
-      <div class="box_produtos"> 
-        <img src="./imagen/produto.jpg" alt="Notebook" width="160px">
-        <br>
-        <p class="descricao"> Notebook Positivo, I3, 1T</p>
+      <div class="box_produtos"id="notebook" style="display: block;"> 
+        <img src="./imagen/produto.jpg" alt="Notebook" width="120px" onclick="destaque(this)">
+        <onclick="destaque(this)">
+        <div class="descricao"> Notebook Positivo, I3, 1T</div>
         <hr>
-        <p class="descricao"><strike> $ 3.400,99</strike></p> 
-        <p class="precos"> <b>$ 2.699,99</b></p>
+        <div class="descricao"><strike> $ 3.400,99</strike></div> 
+        <div class="precos"> <b>$ 2.699,99</b></div>
       </div>
 
-      <div class="box_produtos"> 
-        <img src="./imagen/pr suporte.jpg" alt="suporte para notebook" width="150px">
+      <div class="box_produtos"id="suporte_para_notebook" style="display: block;"> 
+        <img src="./imagen/pr suporte.jpg" alt="suporte para notebook"" width = "120px" onclick="destaque(this)">
         <br>
-        <p class="descricao"> Suporte p/ Notebook/ base inox</p>
+        <div class="descricao"> Suporte p/ Notebook/ base inox</div>
         <hr>
-        <p class="descricao"><strike> $ 1.900,00</strike></p> 
-        <p class="precos"> <b>$ 1.200,99 </b></p>
+        <div class="descricao"><strike> $ 1.900,00</strike></div> 
+        <div class="precos"> <b>$ 1.200,99 </b></div>
       </div>
-      <div class="box_produtos"> 
-        <img src="./imagen/pr ssd.jpg" alt="ssd" width="150px">
+      <div class="box_produtos"id="suporte_para_notebook" style="display: block;"> 
+        <img src="./imagen/pr suporte.jpg" alt="suporte para notebook"" width="120px" onclick="destaque(this)">
         <br>
-        <p class="descricao"> SSD SanDisck</p>
+        <div class="descricao"> Suporte p/ Notebook/ base inox</div>
         <hr>
-        <p class="descricao"> <strike> $ 900,00</strike></p> 
+        <div class="descricao"><strike> $ 1.900,00</strike></div> 
+        <div class="precos"> <b>$ 1.200,99 </b></div>
+      </div>
+      <div class="box_produtos"id="suporte_para_notebook" style="display: block;"> 
+        <img src="./imagen/pr suporte.jpg" alt="suporte para notebook"" width="120px" onclick="destaque(this)">
+        <br>
+        <div class="descricao"> Suporte p/ Notebook/ base inox</div>
+        <hr>
+        <div class="descricao"><strike> $ 1.900,00</strike></div> 
+        <div class="precos"> <b>$ 1.200,99 </b></div>
+      </div>
+      <div class="box_produtos"id="suporte_para_notebook" style="display: block;"> 
+        <img src="./imagen/pr suporte.jpg" alt="suporte para notebook"" width= "120px" onclick="destaque(this)">
+        <br>
+        <div class="descricao"> Suporte p/ Notebook/ base inox</div>
+        <hr>
+        <div class="descricao"><strike> $ 1.900,00</strike></div> 
+        <div class="precos"> <b>$ 1.200,99 </b></div>
+      </div>
+
+      <div class="box_produtos" style="display: block;"> 
+        <img src="./imagen/pr ssd.jpg" alt="ssd" width="120px" onclick=""destaque(this)">
+        <br>
+        <div class="descricao"id="ssd"> SSD SanDisck</div>
+        <hr>
+        <div class="descricao"> <strike> $ 900,00</strike></div> 
         <p class="precos"> <b>$ 800,99 </b></p>
       </div>
-      <div class="box_produtos"> 
-        <img src="./imagen/pr proces.jpg" alt="processador" width="150px">
+      <div class="box_produtos" style="display: block;"> 
+        <img src="./imagen/pr proces.jpg" alt="processador" width="120" onclick="destaque(this)">
         <br>
-        <p class="descricao"> Processador Intel I5 </p>
+        <div class="descricao"id="processador"> Processador Intel I5 </div>
         <hr>
-        <p class="descricao"> <strike> $ 1.300,00</strike></p> 
-        <p class="precos"> <b>$ 1.200,99 </b></p>
+        <div class="descricao"> <strike> $ 1.300,00</strike></div> 
+        <div class="precos"> <b>$ 1.200,99 </b></div>
       </div>
-      <div class="box_produtos"> 
-        <img src="./imagen/pr extensao.jpg" alt="extensao" width="150px">
+      <div class="box_produtos"id="extensao" style="display: block;"> 
+        <img src="./imagen/pr extensao.jpg" alt="extensao" width="120"pxonclick="destaque(this)">
         <br>
-        <p class="descricao">  Extensão 6 ent/30 m/Branco</p>
+        <div class="descricao" >  Extensão 6 ent/30 m/Branco</div>
         <hr>
-        <p class="descricao"> <strike>  $ 150,00</strike></p> 
-        <p class="precos"> <b>$ 149,99 </b></p>
+        <div class="descricao"> <strike>  $ 150,00</strike></div> 
+        <div class="precos"> <b>$ 149,99 </b></div>
       </div>
       
-      <div class="box_produtos"> 
-        <img src="./imagen/produto.jpg" alt="Notebook" width="160px">
-        <br>
-        <p class="descricao"> Notebook Positivo, I3, 1T</p>
+      <div class="box_produtos" id="notebook" style="display:block;"> 
+        <img src="./imagen/produto.jpg" alt="Notebook" width="120px" onclick="destaque(this)">"
+        <onclick="destaque(this)">
+        <div class="descricao"> Notebook Positivo, I3, 1T</div>
         <hr>
-        <p class="descricao"><strike> $ 3.400,99</strike></p> 
-        <p class="precos"> <b>$ 2.699,99</b></p>
+        <div class="descricao"><strike> $ 3.400,99</strike></div> 
+        <div class="precos"> <b>$ 2.699,99</b></div>
       </div>
 
-      <div class="box_produtos"> 
-        <img src="./imagen/pr suporte.jpg" alt="suporte para notebook" width="150px">
+      <div class="box_produtos"id="ssd" style="display: block;"> 
+        <img src="./imagen/pr ssd.jpg" alt="ssd" width="120px" onclick="destaque(this)">
         <br>
-        <p class="descricao"> Suporte p/ Notebook/ base inox</p>
+        <div class="descricao"> SSD SanDisck</div>
         <hr>
-        <p class="descricao"><strike> $ 1.900,00</strike></p> 
-        <p class="precos"> <b>$ 1.200,99 </b></p>
+        <div class="descricao"> <strike> $ 900,00</strike></div> 
+        <div class="precos"> <b>$ 800,99 </b></div>
       </div>
-      <div class="box_produtos"> 
-        <img src="./imagen/pr ssd.jpg" alt="ssd" width="150px">
+      <div class="box_produtos"id="processador" style="display: block;"> 
+        <img src="./imagen/pr proces.jpg" alt="processador" width="12"0pxonclick="destaque(this)"
         <br>
-        <p class="descricao"> SSD SanDisck</p>
+        <div class="descricao"> Processador Intel I5 </div>
         <hr>
-        <p class="descricao"> <strike> $ 900,00</strike></p> 
-        <p class="precos"> <b>$ 800,99 </b></p>
+        <div class="descricao"> <strike> $ 1.300,00</strike></div> 
+        <div class="precos"> <b>$ 1.200,99 </b></div>
       </div>
-      <div class="box_produtos"> 
-        <img src="./imagen/pr proces.jpg" alt="processador" width="150px">
+      <div class="box_produtos"id="extensao" style="display: block;"> 
+        <img src="./imagen/pr extensao.jpg" alt="extensao" width="120"pxonclick="destaque(this)"
         <br>
-        <p class="descricao"> Processador Intel I5 </p>
+        <div class="descricao">  Extensão 6 ent/30 m/Branco</div>
         <hr>
-        <p class="descricao"> <strike> $ 1.300,00</strike></p> 
-        <p class="precos"> <b>$ 1.200,99 </b></p>
+        <div class="descricao"> <strike>  $ 150,00</strike></div> 
+        <div class="precos"> <b>$ 149,99 </b></div>
       </div>
-      <div class="box_produtos"> 
-        <img src="./imagen/pr extensao.jpg" alt="extensao" width="150px">
+      <div class="box_produtos"id="extensao" style="display: block;"> 
+        <img src="./imagen/pr extensao.jpg" alt="extensao" width="120"pxonclick="destaque(this)"
         <br>
-        <p class="descricao">  Extensão 6 ent/30 m/Branco</p>
+        <div class="descricao">  Extensão 6 ent/30 m/Branco</div>
         <hr>
-        <p class="descricao"> <strike>  $ 150,00</strike></p> 
-        <p class="precos"> <b>$ 149,99 </b></p>
+        <div class="descricao"> <strike>  $ 150,00</strike></div> 
+        <div class="precos"> <b>$ 149,99 </b></div>
+      </div>
+      <div class="box_produtos"id="extensao" style="display: block;"> 
+        <img src="./imagen/pr extensao.jpg" alt="extensao" width="120"pxonclick="destaque(this)"
+        <br>
+        <div class="descricao">  Extensão 6 ent/30 m/Branco</div>
+        <hr>
+        <div class="descricao"> <strike>  $ 150,00</strike></div> 
+        <div class="precos"> <b>$ 149,99 </b></div>
+      </div>
+      <div class="box_produtos"id="extensao" style="display: block;"> 
+        <img src="./imagen/pr extensao.jpg" alt="extensao" width="120"pxonclick="destaque(this)"
+        <br>
+        <div class="descricao">  Extensão 6 ent/30 m/Branco</div>
+        <hr>
+        <div class="descricao"> <strike>  $ 150,00</strike></div> 
+        <div class="precos"> <b>$ 149,99 </b></div>
       </div>
 
       
@@ -213,9 +280,9 @@
     <br><br><br>
     <footer id="rodape">
 
-      <p id="formadepagamento"><b>Formas de pagamento</b></p>
+      <div id="formadepagamento"><b>Formas de pagamento</b></div>
       <img src="./imagen/formas de pagamentos.png" alt="formas-de-pagamentos" width="180px">
-      <p class="rodape_final"> <b>&copy;Recode pro</b></p>
+      <div class="rodape_final"> <b>&copy;Recode pro</b></div>
     
     </footer>
 
