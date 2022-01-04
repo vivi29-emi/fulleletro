@@ -24,6 +24,7 @@
 .produtos {
     color:black;
     width:20%;
+
 }
 .descricao{
     font-size: 90%;
@@ -41,9 +42,12 @@
 }
 
 .box_produtos{
-    display: inline-block;
+    
     width: 33%;
     height:20% ;
+    display: block;
+    
+     
     
 }
 
@@ -56,18 +60,30 @@
      height: 30%;
  }
 
-#contato{
-    border: 0;
+ #box_dados{
+     padding-top: 5%;
+ }
+
+#box_contato{
+    display: flex;
     width: 100%;
-    
-}    
-.box_contato{
-    width: 50%;
-    text-align: center;
-    font-size: 4;
+    justify-content: space-around;
     
 
+    
+    
+}   
+
+
+
+
+
+.imagen_contato{
+    width: 40px;
+
 }
+
+
 
 
 
