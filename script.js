@@ -13,7 +13,7 @@ function exibir_categoria(categoria) {
        }
 }
 
-// para desfiltrar os elementos
+// para desfiltrar os elementos  função arrow
        function exibir_todos() {
               let elementos = document.getElementsByClassName('box_produtos');
 
